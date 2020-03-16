@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>REGISTRE</header>
+    <section>
+        <div>
+            <p><input type="text" name="txtp" id="txtp" placeholder="produto" />
+                <input type="number" name="txtv" id="txtv" placeholder="valor" /> x 
+                <input type="number" name="txtq" id="txtq" placeholder="quantidade" />
+                <input type="button" value="Adicionar" onclick="addProduto()" />
+                <input type="button" value="Deletar" onclick="delProduto()" />
+        </div>
+        <div id="res">
+            Aqui vai o resultado...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Registre</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
