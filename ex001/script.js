@@ -1,4 +1,4 @@
-function cadProduto(produto, quantidade, valor, total) {
+function cadProduto(produto, quantidade, valor) {
     let tb = document.querySelector('#tbProduto');
     let qtdLinhas = tb.rows.length;
     let linha = tb.insertRow(qtdLinhas);
@@ -13,5 +13,5 @@ function cadProduto(produto, quantidade, valor, total) {
     cellProduto.innerHTML = produto;
     cellQuantidade.innerHTML = quantidade;
     cellValor.innerHTML = valor;
-    cellTotal.innerHTML = total;
+    cellTotal.innerHTML = valor*quantidade;
 }
