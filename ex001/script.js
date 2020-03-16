@@ -14,4 +14,5 @@ function cadProduto(produto, quantidade, valor) {
     cellQuantidade.innerHTML = quantidade;
     cellValor.innerHTML = valor;
     cellTotal.innerHTML = valor*quantidade;
+    
 }
