@@ -6,3 +6,8 @@ body {
 footer {
     font-style: italic;
 }
+
+table tr td {
+    padding: 10px;
+    width: 130px;
+}

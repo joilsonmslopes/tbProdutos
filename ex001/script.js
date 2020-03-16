@@ -1,26 +1,17 @@
-function obterProduto() {
-    document.querySelector('input#txtp').value
-}
+function cadProduto(produto, quantidade, valor, total) {
+    let tb = document.querySelector('#tbProduto');
+    let qtdLinhas = tb.rows.length;
+    let linha = tb.insertRow(qtdLinhas);
 
-function obterValor() {
-    document.querySelector('input#txtv').value
-}
 
-function obterQuantidade() {
-    document.querySelector('input#txtq').value
-}
+    let cellProduto = linha.insertCell(0);
+    let cellQuantidade = linha.insertCell(1);
+    let cellValor = linha.insertCell(2);
+    let cellTotal = linha.insertCell(3);
 
-function addProduto() {
-    let res = document.querySelector('div#res');
-
-    let produto = obterProduto()
-    let quantidade = Number(obterQuantidade)
-    let valor = Number(obterValor)
     
-
-    if (produto == 0 || quantidade == 0 || valor == 0) {
-        alert('error! PREENCHER TODOS OS CAMPOS')
-    } else {
-        res.innerHTML = `${produto} | ${valor} x ${quantidade} = ${valor*quantidade}`
-    }
+    cellProduto.innerHTML = produto;
+    cellQuantidade.innerHTML = quantidade;
+    cellValor.innerHTML = valor;
+    cellTotal.innerHTML = total;
 }

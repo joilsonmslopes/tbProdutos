@@ -7,22 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>REGISTRE</header>
-    <section>
-        <div>
-            <p><input type="text" name="txtp" id="txtp" placeholder="produto" />
-                <input type="number" name="txtv" id="txtv" placeholder="valor" /> x 
-                <input type="number" name="txtq" id="txtq" placeholder="quantidade" />
-                <input type="button" value="Adicionar" onclick="addProduto()" />
-                <input type="button" value="Deletar" onclick="delProduto()" />
-        </div>
-        <div id="res">
-            Aqui vai o resultado...
-        </div>
-    </section>
-    <footer>
-        <p>&copy; Registre</p>
-    </footer>
+    <div id="dfProduto">
+        <form name="fProduto">
+            <label>Produto</label>
+            <input type="text" name="txtProduto" id="txtProduto" placeholder="produto" />
+            <label>Quantidade</label>
+            <input type="text" name="txtQuantidade" id="txtQuantidade" placeholder="quantidade" />
+            <label>Valor</label>
+            <input type="text" name="txtValor" id="txtValor" placeholder="valor" />
+            <label>Total</label>
+            <input type="text" name="txtTotal" id="txtTotal" placeholder="total" />
+            <input type="button" value="Adicionar Produto" onclick="cadProduto(txtProduto.value, txtQuantidade.value, txtValor.value, txtTotal.value)">
+        </form>
+    </div>
+    <br /><br />
+    <div id="dtProduto">
+        <table id="tbProduto">
+            <thead>
+                <tr>
+                    <td>Produto</td>
+                    <td>Quantidade</td>
+                    <td>Valor</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
