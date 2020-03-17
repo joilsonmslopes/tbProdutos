@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio01</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="dfProduto">
-        <form name="fProduto">
-            <label>Produto</label>
-            <input type="text" name="txtProduto" id="txtProduto" placeholder="produto" />
-            <label>Quantidade</label>
-            <input type="text" name="txtQuantidade" id="txtQuantidade" placeholder="quantidade" />
-            <label>Valor</label>
-            <input type="text" name="txtValor" id="txtValor" placeholder="valor" />
-            <input type="button" value="Adicionar Produto" onclick="cadProduto(txtProduto.value, txtQuantidade.value, txtValor.value)">
-        </form>
-    </div>
-    <br /><br />
-    <div id="dtProduto">
-        <table id="tbProduto">
-            <thead>
-                <tr>
-                    <td>Produto</td>
-                    <td>Quantidade</td>
-                    <td>Valor</td>
-                    <td>Total</td>
-                </tr>
-            </thead>
-        </table>
-    </div>
+    <header>Tabela de Produtos</header>
+    <section>
+        <div id="dfProduto">
+            <form name="fProduto">
+                <label>Produto</label>
+                <input type="text" name="txtProduto" id="txtProduto" placeholder="produto" />
+                <label>Quantidade</label>
+                <input type="text" name="txtQuantidade" id="txtQuantidade" placeholder="quantidade" />
+                <label>Valor</label>
+                <input type="text" name="txtValor" id="txtValor" placeholder="valor" />
+                <input type="button" value="Adicionar Produto"
+                    onclick="cadProduto(txtProduto.value, txtQuantidade.value, txtValor.value)">
+            </form>
+        </div>
+        <br /><br />
+        <div id="dtProduto">
+            <table id="tbProduto">
+                <thead>
+                    <tr>
+                        <td>Produto</td>
+                        <td>Quantidade</td>
+                        <td>Valor</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Tabelas</p>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

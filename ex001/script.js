@@ -12,7 +12,7 @@ function cadProduto(produto, quantidade, valor) {
     
     cellProduto.innerHTML = produto;
     cellQuantidade.innerHTML = quantidade;
-    cellValor.innerHTML = valor;
-    cellTotal.innerHTML = valor*quantidade;
+    cellValor.innerHTML = 'R$' + valor;
+    cellTotal.innerHTML = 'R$' + valor*quantidade;
     
 }
